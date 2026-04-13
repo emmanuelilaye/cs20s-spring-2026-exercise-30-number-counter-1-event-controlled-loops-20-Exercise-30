@@ -1,41 +1,22 @@
-// import files here as needed
- 
- import java.text.DecimalFormat;	// needed for formatting output numbers
- import java.util.Scanner; //for input
+import java.text.DecimalFormat;
+import java.util.Scanner;
 
- 
- public class Main
- {  // begin class
- public static void main(String[] args)     
-    {//begin main
+public class Main
+{
+    public static void main(String[] args)
+    {
+        int input;
 
+        Scanner in = new Scanner(System.in);
 
+        System.out.print("Enter a number (0 to stop): ");
+        input = in.nextInt();
 
- 	// ********** declare constants **********
- 	
- 	
- 	// *********** declare variables **********
- 	int input;
+        while (input != 0) {
+            System.out.print("Enter a number (0 to stop): ");
+            input = in.nextInt();
+        }
 
-
-	// ********* code needed for keyboard input ******
-   	Scanner in = new Scanner(System.in);  //creates a Scanner object in
-
-   	//sample code for loop priming
-	System.out.print("Enter a number (0 to stop): ");
-  	input = in.nextInt();
-  
-	//add loop here
-
-
-
-	
- 	 									
- 	// ********** closing message **********
- 	
- 	System.out.println("end of processing");
- 	
- 	}  // end main
- 
- }  // end class
-
+        System.out.println("end of processing");
+    }
+}
